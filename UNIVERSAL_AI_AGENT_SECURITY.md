@@ -72,6 +72,7 @@ Use this document as the single source of truth for security and privacy across 
   - Do not include private entitlements or signing configurations in public repos
   - Keep Apple ID email addresses private; use generic Apple Developer account references only
   - Do not expose App Store Connect API keys or credentials
+  - Keep app identifiers private unless they are intentionally public
   - Use on-device/private Apple Intelligence models when handling sensitive data
   - Avoid committing Xcode workspace settings with private paths or local machine details
   
@@ -99,7 +100,7 @@ Use this document as the single source of truth for security and privacy across 
 
 ### Windows / PC / Linux
 - **VS Code, Visual Studio, Terminal-based dev:**
-  - Do not expose Windows authentication details, domain credentials, or machine names
+  - Do not expose Windows authentication details, domain credentials, machine names, or local usernames
   - Do not include private UNC paths, local network shares, or internal domain names
   - Do not commit .vs/ folder settings with machine-specific paths
   - Do not expose PowerShell execution policies or admin credentials
@@ -301,7 +302,7 @@ If you are uncertain whether something should be exposed:
 ---
 
 ## Document Version
-- **Last Updated:** 2026-10-07
+- **Last Updated:** 2026-10-19
 - **Coverage:** All AI agents, IDEs, platforms, and automation frameworks
 - **Audience:** AI agents, developers, automation workflows, CI/CD systems
 - **Scope:** Universal security and privacy baseline for code repositories
